@@ -143,11 +143,11 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 /* split / calculator */
 .ballast{display:flex;height:96px;border-radius:16px;overflow:hidden;margin-top:6px}
 .ballast div{display:flex;flex-direction:column;justify-content:flex-end;padding:12px 14px;min-width:0;transition:flex .4s}
-.ballast b{font:800 1.6rem var(--display);line-height:1}
+.ballast b{font:800 1.6rem var(--display);line-height:1;white-space:nowrap}
 .ballast span{font-size:.8rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .b-keep{flex:50;background:var(--lagoon-deep);color:#fff}
 .b-you{flex:40;background:var(--honey);color:var(--night)}
-.b-fee{flex:10;min-width:74px;background:var(--hive);color:#fff}
+.ballast .b-fee{flex:10;min-width:104px;background:var(--hive);color:#fff}
 .calc{background:var(--night);color:var(--on-night);border-radius:var(--radius);padding:28px;display:grid;gap:18px}
 .calc label{font-weight:700;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .calc label output{font:700 1.1rem var(--display);color:var(--honey)}
