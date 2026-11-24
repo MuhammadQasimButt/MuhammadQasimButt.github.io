@@ -40,7 +40,8 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--mist);color:var(--text);font:17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0 0 .5em;letter-spacing:-.02em;text-wrap:balance}
-h1{font-size:clamp(2.3rem,5.6vw,4.3rem);font-weight:800}
+h1{font-size:clamp(1.85rem,4.3vw,3.55rem);font-weight:800;line-height:1.06}
+.hero h1 .ln{display:block;white-space:nowrap}
 h2{font-size:clamp(1.7rem,3.6vw,2.6rem);font-weight:700}
 h3{font-size:1.08rem;font-weight:700;letter-spacing:-.01em}
 p{margin:0 0 1em}
@@ -67,7 +68,8 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .navlinks{display:flex;gap:24px;align-items:center}
 .navlinks a{color:var(--on-night-2);text-decoration:none;font-size:.92rem;font-weight:600}
 .navlinks a:hover{color:#fff}
-.navlinks .btn{padding:10px 18px;font-size:.88rem;color:var(--night)}
+.navlinks .btn{padding:10px 18px;font-size:.88rem;color:var(--night);white-space:nowrap}
+@media (max-width:420px){.navlinks .btn{padding:9px 14px;font-size:.82rem}.brand{font-size:.98rem}}
 @media (max-width:860px){.navlinks a:not(.btn){display:none}}
 
 /* hero */
@@ -205,7 +207,8 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .footnote{font-size:.85rem;color:var(--on-night-2);margin-top:20px}
 
 /* faq */
-.faq{max-width:820px;margin-top:36px;display:grid;gap:12px}
+.faq{margin-top:36px;display:grid;gap:12px}
+@media (min-width:900px){.faq{grid-template-columns:1fr 1fr;align-items:start}}
 .faq details{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 20px}
 .faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
 .faq summary::-webkit-details-marker{display:none}
@@ -251,7 +254,7 @@ footer .wrap{padding-block:26px 34px;display:flex;justify-content:space-between;
   <div class="wrap">
     <div>
       <span class="badge"><i></i>Invite-only · Hive-Engine</span>
-      <h1>Your SWAP.HIVE never sleeps. <em>Neither do we.</em></h1>
+      <h1><span class="ln">Your SWAP.HIVE</span> <span class="ln">never sleeps.</span> <em class="ln">Neither do we.</em></h1>
       <p class="lead">HiveHarbor trades your SWAP.HIVE around the clock on Hive-Engine's deepest pools, from an account that stays yours. Every win is split three ways: half grows your account, 40% lands in your wallet, and a small fee keeps the lighthouse lit.</p>
       <div class="hero-cta">
         <a class="btn btn-honey" href="#join">Request an invite →</a>
